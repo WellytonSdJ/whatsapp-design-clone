@@ -1,52 +1,4 @@
 
-/* html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, b, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-/* article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-} */
-/* 
-fim reset */
-
-/* inicio meu css */
-
 *{
     /* background-color: #c23616; */
     font-family: Arial, Helvetica, sans-serif;
@@ -64,11 +16,6 @@ padding: 0;
 display: flex;
 }
 
-header{
-    background-color: #2A2F32 ;
-    color: #B1B3B5 ;
-}
-
 .avatar{
     position: initial;
     width: 40px;
@@ -78,11 +25,12 @@ header{
 }
 
 aside { 
-    background-color: #383A59    ;
+    background-color: #131C21    ;
     color: blanchedalmond;
     
     position: relative;
     margin: 0;
+    
     top: 0;
     bottom: 0;
 
@@ -92,17 +40,55 @@ aside {
 
     display: flex;
     flex-direction: column;
+}
+
+input{
+    border-radius: 20px;
+    background-color: #323739;
+    color: lightgray;
+
+}
+
+header{
+    background-color: #2A2F32 ;
+    color: #B1B3B5 ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.chatlist{
+    animation: cubic-bezier(1, 0, 0, 1);
+}
+
+.chatList li a{
+    text-decoration: none;
+}
 
 .icon{
     color: white;
 }
-    
-}
-/* 
-.current-talk {
-    background-color: #282A36;
-    color: blanchedalmond;
 
-    position: absolute;
-    align-self: end;
-} */
+.current-talk{
+    position: relative;
+}
+
+.chatSpace{
+    background-color: #090E11;
+    color: ivory;
+    position: relative;
+}
+
+#bg{
+    position: relative;
+    opacity: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+.bottomMenu{
+    top: 0;
+    background-color: #1E2428;
+    justify-content: space-between;
+    /* bottom: 0; */
+}
